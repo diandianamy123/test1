@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>User Registration</title> <!-- 用户注册 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,  maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+	<link rel="stylesheet" type="text/css" href="source/css/weui.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="source/css/jquery-weui.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="source/css/login.css">
+    <!-- <script charset="UTF-8" type="text/javascript" src="js/jquery-weui.min.js"></script> -->
+    <script type="text/javascript" src="source/js/jquery.min.js"></script>
+    <script type="text/javascript" src="source/js/layer_mobile/layer.js"></script>
+	<script type="text/javascript" src="source/js/md5.js"></script>
+	<script src="source/js/rem.js"></script>
+	<!--[if lte IE 8]>
+	    <script src="html5shiv.min.js"></script>
+	    <script src="respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div id="logo">
+		<img src="source/img/logo.png" alt="" class="myimg">	
+	</div>
+	<form id="myform" >
+		<h3 style="font-family: PingFang-SC-Medium;margin-left:39%;color: #222222;font-weight: 545;font-size: .36rem;margin-top: .63rem;">创建账户</h3>
+		<p style="font-family: PingFang-SC-Regular;margin-left:38%;color: #8e8e93;font-size: .24rem;">欢迎来到MACC</p>
+		<!--<input type="text" placeholder="昵称" name="userName" required="required" >--> <!-- 昵称-->
+		<div class="code" style="margin-top: .92rem;">
+				<p class="fl" id="code">账号</p>
+		<input type="text" placeholder="请输入手机号码" name="phone" required="required" > <!-- 手机号/邮箱-->
+		</div>
+		<div class="code">
+				<p class="fl" id="code">登录密码</p>
+				<input type="password" class="pwd" placeholder="请输入6-10位数字与字母组合密码" required="required" name="pwd" style="width: 4.59rem;"> <!-- 密码 -->
+				<!-- <img src="source/img/closeSee.png" alt="" class="seeimg" onclick="showhide()"> -->
+		       <i class="close eyes"  onclick="showtoggle('.pwd')"></i>
+			</div>
+		<div class="code">
+				<p class="fl" id="code">确认密码</p>
+				<input type="password" class="pwd2" placeholder="请输入确认密码" required="required" name="paw2" > <!-- 确认密码 -->
+				<i class="close eyes" onclick="showtoggle('.pwd2')"></i>
+			</div>
+		
+		<div class="code">
+				<span class="fl" id="code">验证码</span>
+		    <input type="text" placeholder="请输入验证码" name="code" required="required" class="fl" style="margin-top: .2rem;width: 1.79rem;"> <!-- 验证码 -->
+			<div type="sub" id="sub">获取验证码</div>
+		</div>
+		<!-- <input type="text" placeholder="请输入用户昵称" required="required" name="nickname"> -->
+		
+		<div class="code">
+				<p class="fl" id="code" style="margin-left: -1.3rem;">邀请码</p>
+		<input type="text" placeholder="邀请码" disabled required="required" name="tjuser" id="tjuser" > <!-- 邀请码 -->
+		<!-- disabled="disabled" -->
+		</div>
+		<!--居中显示视图-->
+		<div class="dislog" onclick="cances()">
+			<!--内容-->
+			<div class="dis_cont">
+				<div id="cont_dis">
+				</div>
+			</div>
+			<!-- <div class="dis_bott">
+				<label class="left_name" onclick="cances()">取消</label>
+		   </div>  -->
+		</div>
+		 <div id="yinsi">
+		 	<!--<input name="agree" type="checkbox" value="1" class="text"  id="check" checked/>&nbsp;-->
+			<!-- <span>我已阅读和同意<span id='btnBook'>《服务协议及隐私条款》</span></span>-->
+			<p class="shows" onclick="shows()">注册即代表同意《用户服务协议》</p>
+			 <!-- <p class="nones" onclick="nones()">注册即代表同意《用户服务协议》</p> -->
+		</div> 
+		<div type="submit" id="submit">注册</div>
+	</form>
+</body>
+<script type="text/javascript" src="source/js/reg.js"></script>
+</html>

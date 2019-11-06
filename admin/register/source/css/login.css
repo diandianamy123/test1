@@ -1,0 +1,323 @@
+/* 公共样式 */
+body{
+	font-size: 10px;
+	font-family: "微软雅黑";
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	width: 100%;
+	overflow:hidden;
+}
+div,p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+ul,li,dl,dt,dd{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+}
+a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.fc{
+	clear: both;
+}
+.myimg{
+	width: 3.76rem;
+}
+.eyes{
+	width: .32rem;
+	height: .22rem;
+	float: right;
+	margin-top: .2rem;
+	margin-right: 0%;
+}
+.saw{
+	width: .32rem;
+	height: .22rem;
+	float: right;
+	margin-top: .2rem;
+	margin-right: 0%;
+}
+.eyes.open{
+	background: url(../img/openSee.png) no-repeat;
+	background-size: contain;
+}
+.eyes.close{
+	background: url(../img/closeSee.png) no-repeat;
+	background-size: contain;
+}
+.saw.see{
+	background: url(../img/openSee.png) no-repeat;
+	background-size: contain;
+}
+.saw.nosee{
+	background: url(../img/closeSee.png) no-repeat;
+	background-size: contain;
+}
+
+
+/* logo */
+#logo{
+	width: 66%;
+	border-radius: 25px;
+	/*border: 1px solid #fff;*/
+	overflow: hidden;
+	margin: 25px auto 0;
+	text-align: center;
+	padding-top: 45px;
+}
+/* myform */
+#myform{
+	color: #444;
+	font-size: 16px;
+	width: 6.5rem;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+
+#myform>input{
+	color: #444;
+	font-size: 12px;
+    width: 98%;
+    border: none;
+    outline: none;
+    background: #f9f9f9;
+    height: 0.69rem;
+    border-radius: 0.2rem;
+    /*box-shadow: 1px 1px 1px 1px #ddd;*/
+    margin-top: 0.2rem;
+	padding-left: 15px;
+}
+#myform .code{
+	margin-top: 0.2rem;
+	height:0.69rem;
+	line-height: 0.69rem;
+	border-bottom: solid 1px lightgrey;
+}
+#myform .code::after{
+	display: inline-block;
+	content: '';
+	clear: both;
+}
+#myform .code>input{
+  border:none;
+  font-family: PingFang-SC-Regular;
+  font-size: .3rem;
+  font-weight: normal;
+  letter-spacing: 0rem;
+  color: #222222;
+  outline:none;
+  margin-left: 1%;
+}
+#myform .code>p{
+ width:21%;
+ font-family: PingFang-SC-Medium;
+ font-size: .3rem;
+ font-weight: 500;
+ font-stretch: normal;
+ letter-spacing: 0rem;
+ color: #222222;
+}
+#myform .code>span{
+ width: 20%;
+ height: 2rem;
+ font-family: PingFang-SC-Medium;
+ font-size: .3rem;
+ font-weight: normal;
+ font-stretch: normal;
+ line-height: 1.5rem;
+ letter-spacing: 0rem;
+ color: #222222;
+ margin-top: -0.4rem;
+}
+#myform #submit{
+	margin-top: 46px;
+	width: 6.7rem;
+	height: .9rem;
+    border-radius: 0.45rem;
+    font-size: .32rem;
+    background: linear-gradient(to right, #828187 0%,#131313 100%);
+    color: #fff;
+    box-shadow: none;
+    font-weight: 500;
+	border:none;
+	line-height:40px;
+	outline:none;
+	text-align: center;
+	margin-top: 1.03rem;
+}
+#myform #sub{
+	float: right;
+	width: 1.77rem;
+	height: .6rem;
+    border-radius: 0.2rem;
+    font-size: .26rem;
+    background: linear-gradient(to right, #828187 0%,#131313 100%);
+    color: #fff;
+    box-shadow: none;
+    font-weight: 500;
+	border:none;
+	line-height:.55rem;
+	outline:none;
+	text-align: center;
+	margin-right: .43rem;
+	margin: 0 auto;
+}
+#yinsi{
+   color:#444;
+   font-size:10px;
+   width:79%;
+   margin:0 auto;
+   margin-top:0.2rem;
+   margin-left:10px;
+}
+#yinsi p{
+	width: 78%;
+	height: 1rem;
+	font-family: PingFang-SC-Regular;
+	font-size: .24rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: .22rem;
+	letter-spacing: 0rem;
+	color: #000000;
+	margin-left: -0.44rem;
+}
+.cont {
+	position: relative;
+	width: 100%;
+	height: 70px;
+}
+
+#tjuser {
+	background: none;
+}
+/*显示按钮*/
+
+.shows {
+	position: absolute;
+	left: 0;
+	width: 50%;
+	font-size: 0.2rem;
+	height: 70px;
+	text-align: center;
+	/* background-color: #2AC845; */
+	color: #fff;
+	line-height: 70px;
+}
+/*隐藏*/
+
+.nones {
+	position: absolute;
+	right: 0;
+	width: 50%;
+	font-size: 0.2rem;
+	height: 70px;
+	text-align: center;
+	background-color: #DD524D;
+	color: #fff;
+	line-height: 70px;
+}
+/*弹窗*/
+
+.dislog {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: none;
+	text-align: center;
+	background: rgba(0, 0, 0, .4);
+	/* opacity: 0.8; */
+	/* margin-top: -120%;
+	margin-left: -13%; */
+}
+/*状态*/
+
+.list {
+	position: relative;
+	width: 100%;
+	height: 70px;
+}
+
+.dis_cont {
+	position: absolute;
+	border-radius: 10px;
+	top: 5%;
+	left: 50%;
+	width: 80%;
+	display: inline-block;
+	height: 90%;
+	background: #fff;
+	/* margin-top: -45%; */
+	margin-left: -40%;
+	overflow:auto;
+	text-align: left;
+}
+/*确认取消*/
+
+.dis_bott {
+	position: absolute;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-top: 1px solid #ddd;
+	width: 80%;
+	height: 56px;
+	bottom: 9px;
+	background-color: #fff;
+	left: 10%;
+}
+/*取消按钮*/
+
+.left_name {
+	position: absolute;
+	border-bottom-left-radius: 10px;
+	text-align: center;
+	left: 0px;
+	width: 50%;
+	height: 56px;
+	line-height: 70px;
+	background-color: #fff;
+}
+/*确认*/
+
+.right_name {
+	position: absolute;
+	text-align: center;
+	border-bottom-right-radius: 10px;
+	right: 0px;
+	width: 49%;
+	height: 70px;
+	line-height: 70px;
+	background-color: #fff;
+}
+/* 提示*/
+ #cont_dis {
+	/* position: relative; */
+	/* border-radius: 10px; */
+	/* text-align: center; */
+	/* width: 100%;
+	height: 90%;
+	font-size: 0.2rem; */
+	/* display: flex;
+	align-items: center;
+	color: #fff; */
+	box-sizing: border-box;
+	padding: 0.2rem 0.2rem;
+} 
